@@ -18,8 +18,8 @@ export default class SpaceX extends React.Component {
     fetch("https://api.spaceXdata.com/v3/launches?" +
         new URLSearchParams({
           limit:100,
-          launch_success:data_new?data_new.launch:'',
-          land_success:data_new?data_new.landing:'',
+          launch_success:data_new?data_new.launch.toLowerCase():'',
+          land_success:data_new?data_new.landing.toLowerCase():'',
           launch_year:data_new?data_new.year:''
         })
     )
