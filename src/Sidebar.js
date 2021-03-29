@@ -36,17 +36,17 @@ this.props.onClick(this.state);
         <span className='filters'>Filters</span>
   <input type='number' placeholder='Launch Year' disabled/>
   {years.map((year,id)=>{
-    return<div id-attr = {id} name='year' className={this.state.yearid!='' && this.state.yearid == id ? 'clicked year' 
+    return<div id-attr = {id} name='year' className={this.state.yearid!=='' && parseInt(this.state.yearid) === id ? 'clicked year' 
     :'year'} onClick={this.onClick}>{year}</div>
   })}
   <input type='text' placeholder='Successful Launch' disabled/>
   {bools.map((bool,id)=>{
-    return<div id-attr = {id} name='launch' className={this.state.launchid!='' &&this.state.launchid == id ? 'clicked bool' 
+    return<div id-attr = {id} name='launch' className={this.state.launchid!=='' && parseInt(this.state.launchid) === id ? 'clicked bool' 
     :'bool'} onClick={this.onClick}>{bool}</div>
   })}
   <input type='text' placeholder='Successful Landing' disabled/>
   {bools.map((bool,id)=>{
-    return<div id-attr = {id} name='landing' className={this.state.landid!='' && this.state.landid == id ? 'clicked bool' 
+    return<div id-attr = {id} name='landing' className={this.state.landid!=='' && parseInt(this.state.landid) === id ? 'clicked bool' 
     :'bool'} onClick={this.onClick}>{bool}</div>
   })}
       </div>
