@@ -24,4 +24,5 @@ You will also see any lint errors in the console.
 - Then according to applied filters, calling service with required params.
 - For now disable input, we can enable it also and call service on change with debounce effect.
 _ For now, there is no option to clear our filters, we can provide that option also so that user doesn't have to reloead the page.
+- Design is reponsive as per desktop, mobile and tablet view, used media queries and grid model for this.
 
