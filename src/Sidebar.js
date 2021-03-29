@@ -17,16 +17,22 @@ export default class Sidebar extends React.Component {
 onClick=(e)=>{
 let val = e.target.value || e.target.innerHTML;
 let attr = e.target.getAttribute('name');
-if (attr === 'year') {this.state.year=val;
-this.setState({yearid:e.target.getAttribute('id-attr')}) 
+if (attr === 'year') {//this.state.year=val;
+this.setState({year:val,yearid:e.target.getAttribute('id-attr')},()=>{
+  this.props.onClick(this.state);
+}) 
 }
-if (attr === 'launch') {this.state.launch=val;
-  this.setState({launchid:e.target.getAttribute('id-attr')}) 
+if (attr === 'launch') {//this.state.launch=val;
+  this.setState({launch:val,launchid:e.target.getAttribute('id-attr')},()=>{
+    this.props.onClick(this.state);
+  }) 
 }
-if (attr === 'landing') {this.state.landing=val;
-this.setState({landid:e.target.getAttribute('id-attr')}) 
+if (attr === 'landing') {//this.state.landing=val;
+this.setState({landing:val, landid:e.target.getAttribute('id-attr')},()=>{
+  this.props.onClick(this.state);
+}) 
 }
-this.props.onClick(this.state);
+
 }
   render() {
     const years = [2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021]
