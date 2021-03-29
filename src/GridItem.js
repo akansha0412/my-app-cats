@@ -8,7 +8,7 @@ export default class GridItem extends React.Component {
       <React.Fragment>
     <li key={index}>
         <div className='imgDiv'>
-        <img src={item.links.mission_patch_small}></img>
+        <img src={item.links.mission_patch_small} alt=''></img>
         </div>
         <span className="name">{item.mission_name}</span>
         <div className="lYear">
