@@ -1,0 +1,58 @@
+.grid{
+    background-color: #e6e1e1;
+    margin-left: 180px;
+  /* padding: 1px 16px; */
+}
+
+.auto-grid {
+    --auto-grid-min-size: 238px;
+    display: grid;
+    max-width: calc(100% - 200px);
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 0fr));
+    grid-gap: 1rem;
+  }
+  li {
+    text-align: center;
+    font-size: 1.2rem;
+    background: #fff;
+    border-radius: 10px;
+    color: #1b1b1b;
+    list-style-type: none;
+    height: 300px;
+    padding: 5px;
+}
+.imgDiv{
+  height: 100px;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    background: #e6e1e1;
+    margin: auto;
+}
+img{
+  height:100px
+}
+.name{
+  display: block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #323b9c;
+    margin-bottom: 10px;
+}
+.lYear{
+  height: 24px;
+  font-size: 14px;
+  text-align: left;
+}
+.bold{
+  font-weight: bold;
+}
+.mission_id_li{
+  height: fit-content;
+    text-align: left;
+    font-size: 12px;
+    list-style-position: inside;
+    list-style-type: disc;
+}  

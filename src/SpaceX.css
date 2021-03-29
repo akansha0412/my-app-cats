@@ -1,0 +1,27 @@
+.spaceX{
+  background-color: #e6e1e1;
+  overflow-x: hidden;
+}
+.title{
+  font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+button,
+input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+button {
+  border: none;
+  height: 25px;
+}
+input {
+  height: 20px;
+    border: none;
+    background: unset;
+    border-bottom: 1px solid;
+    text-align: center;
+    display: block;
+}

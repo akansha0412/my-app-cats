@@ -1,0 +1,42 @@
+.sidebar {
+    background-color: #e6e1e1;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 90%;
+    overflow: auto;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .grid {margin-left: 0;}
+}
+
+  .filters{
+    font-weight: bold;
+    padding: 10px
+  }
+  .year,.bool{
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid #75c20a;
+    width: fit-content;
+    display: inline-block;
+    margin-right: 48px;
+    margin-bottom: 10px;
+    padding: 3px;
+    background: #75c20a;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .sidebar .year:hover,
+  .sidebar .bool:hover,
+  .sidebar .clicked,
+  .sidebar .clicked{
+    opacity: 1;
+  }
